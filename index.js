@@ -139,5 +139,5 @@ app.get("/", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`your surver is running port is${port}`);
+  console.log(`your surver is now running port is${port}`);
 });
