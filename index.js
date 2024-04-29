@@ -111,7 +111,7 @@ async function run() {
 
    app.delete('/deletedata/:id', async(req, res)=>{
     const id = req.params.id;
-    console.log('deleted id is', id);
+ 
     const filter = {_id: new ObjectId(id)};
     const result = await artCollection.deleteOne(filter);
     res.send(result)
