@@ -58,10 +58,10 @@ async function run() {
       res.send(result);
     });
 
-    app.get("/finddata/:subcategory", async (req, res) => {
+    app.get("/findsub/:subcategory", async (req, res) => {
       const subcategory = req.params.subcategory;
       const filter = { Subcategory_Name: subcategory };
-      const result = await subCollection.find(filter).toArray();
+      const result = await artCollection.find(filter).toArray();
       res.send(result);
     });
 
